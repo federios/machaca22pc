@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    // height: 200vh; 
+    // background-image: url("./assets/images/bg.webp"); 
+    background-color: #000000; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+body { margin: 0; color: white;}
+
+
+@font-face {
+    font-family: futura;
+    src: url(assets/fonts/Futura_Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: broadway;
+    src: url(assets/fonts/BroadwayFlat.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: cubano;
+    src: url(assets/fonts/Cubano-Regular.otf) format("opentype");
+}
+

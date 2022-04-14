@@ -1,0 +1,215 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="body-wrapper">
+
+    <div class="container-html">
+
+        <div class="container-menu">
+
+            <div id="mov">
+
+              <div id="myNav" class="overlay">
+                <div class="mov-links">
+                  <div class="mov-item"><a routerLink="/" style="color: #fed62a;">INICIO</a></div>
+                  <div class="mov-item"><a routerLink="/lineup">LINEUP</a></div>
+                  <div class="mov-item"><a routerLink="/boletos">BOLETOS</a></div>
+                  <!-- <div class="mov-item"><a routerLink="/tours">TOURS</a></div> -->
+                  <div class="mov-item mov-list">
+                    <div><a href="https://www.facebook.com/Power-Fest-104352912107801" class="facebook" title="Join us on Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                    <div><a href="https://www.instagram.com/thepowerfest/" class="insta" title="Join us on Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                    <div><a href="https://twitter.com/thepowerfestmx" class="tw" title="Join us on Twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                    <div><a href="https://vm.tiktok.com/ZM8cfUpvQ/" class="tiktok" title="Join us on TikTok" target="_blank"><i class="fab fa-tiktok" aria-hidden="true"></i></a></div>
+                    <div><a href="https://www.youtube.com/channel/UC4lE0AcZbyOSmNAx9rNMTjA" class="youtube" title="Join us on Youtube" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></div>
+                    <div><a href="https://open.spotify.com/user/31xx2uceqlwqs7vg3znifzt5h3si?si=010c31e11c2b4614" class="spotify" title="Join us on Spotify" target="_blank"><i class="fa fa-spotify" aria-hidden="true"></i></a></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-mov">
+                <div class="mov-logo"><a routerLink="/"><img src="../../../assets/images/M.webp" alt="" width="50px" height="auto"></a></div>
+                <div class="mov-open">
+                  <div class="menu-wrapper">
+                    <input (click)="openNav()" type="checkbox" id="check">
+                    <div class="bun"><div class="burger"></div></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div id="desk">
+                <div class="menu-desk">
+                  <div class="menu-desk-img">
+                    <div><a routerLink="/"><img src="../../../assets/images/logo-machaca.webp" alt=""></a></div>
+                  </div>
+                  <div class="menu-desk-items">
+                    <div class="menu-desk-item"><a routerLink="/" style="color: #fed62a;">INICIO</a></div>
+                    <div class="menu-desk-item"><a routerLink="/lineup">LINEUP</a></div>
+                    <div class="menu-desk-item"><a routerLink="/boletos">TICKETS</a></div>
+                    <!-- <div class="menu-desk-item"><a routerLink="/tours">TOURS</a></div> -->
+                  </div>
+                  <div class="menu-desk-tickets">
+                    <div><a href="https://eventos.hot-ticket.net" target="_blank" rel="noopener noreferrer"><span>BOLETOS</span></a></div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-body" id="contentId">
+          
+          <div class="body-logo">
+            <div class="logo-top"><img src="../../../assets/images/logo-machaca.webp" alt=""></div>
+            <div class="logo-bot"><img src="../../../assets/images/relampagos.webp" alt=""></div>
+          </div>
+
+          <div class="logo-txt"><div>25 DE JUNIO 2022</div><div>PARQUE FUNDIDORA</div></div>
+
+          <div class="top-btn">
+            <i class="fa-solid fa-ticket"></i>
+            <br>
+            <a href="">COMPRAR BOLETOS</a>
+          </div>
+
+          <div class="body-menu">
+            <div class="body-menu-item"><a routerLink="/boletos">MÁS INFORMACIÓN</a></div>
+            <div class="body-menu-item"><a (click)="openSuc()">VER SUCURSALES</a></div>
+          </div>
+
+          <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+              <label class="card" for="item-1" id="song-1">
+                <img src="../../../assets/images/menu3.webp" alt="song">
+                <div class="card-btn"><a routerLink="/lineup">LINEUP</a></div>
+              </label>
+              <label class="card" for="item-2" id="song-2">
+                <img src="../../../assets/images/menu1.webp" alt="song">
+                <div class="card-btn"><a routerLink="/boletos">BOLETOS</a></div>
+              </label>
+              <label class="card" for="item-3" id="song-3">
+                <img src="../../../assets/images/menu2.webp" alt="song">
+                <div class="card-btn"><a routerLink="">TOURS</a></div>
+              </label>
+            </div>
+            <div class="player">
+              <div class="player-cuadros">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="upper-part">
+                <div class="info-area" id="test">
+                  <label class="song-info" id="song-info-1">
+                    <div class="title"><div for="item1" id="tc1" class="title-cuadro" (click)="menu1()"></div></div>
+                  </label>
+                  <label class="song-info" id="song-info-2">
+                    <div class="title"><div for="item2" id="tc2" class="title-cuadro" (click)="menu2()"></div></div>
+                  </label>
+                  <label class="song-info" id="song-info-3">
+                    <div class="title"><div for="item3" id="tc3" class="title-cuadro" (click)="menu3()"></div></div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="boletos-txt">BOLETOS</div> -->
+
+          <!-- <div class="container-boletos">
+            <div class="boletos-item">
+              <div class="boletos-title">GENERAL</div>
+              <div class="boletos-title">CREYENTE</div>
+              <div class="boletos-precio">$2,000</div>
+              <div class="boletos-precio" style="font-size: 10px;">+ cargos por servicio</div>
+            </div>
+            <div id="mov" class="boletos-btn">
+              <div><a>COMPRAR BOLETOS</a></div>
+              <div><a routerLink="/boletos">MÁS INFORMACIÓN</a></div>
+            </div>
+            <div class="boletos-item">
+              <div class="boletos-title">VIP</div>
+              <div class="boletos-title">CREYENTE</div>
+              <div class="boletos-precio">$3,000</div>
+              <div class="boletos-precio" style="font-size: 10px;">+ cargos por servicio</div>
+            </div>
+          </div>
+
+          <div class="boletos-btn">
+            <div><a>COMPRAR BOLETOS</a></div>
+            <div><a routerLink="/boletos">MÁS INFORMACIÓN</a></div>
+            <div class="btn2"><a>VER SUCURSALES</a></div>
+          </div> -->
+
+          <div class="poster">
+            <img src="../../../assets/images/machacaposter.webp" alt="">
+          </div>
+
+          <!-- <div class="playlist">
+            <div style="margin-bottom: 20px;">ESCUCHA NUESTRA PLAYLIST OFICIAL</div>
+            <div class="container-iframe"><div style="padding-top: 18px;"><iframe src="https://open.spotify.com/embed/playlist/7fBdP3rbRa33wNW2fvzM69" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div></div>
+          </div> -->
+
+          <div class="newsletter">
+
+            <div class="mail-logo"><i class="far fa-envelope"></i></div>
+            <div class="news-title">ÚNETE A NUESTRO NEWSLETTER</div>
+    
+            <form class="form-size" #subscribeForm='ngForm' (ngSubmit)='subscribe(subscribeForm)'>
+                <div class="md-form">
+    
+                    <div class="text-inputs">
+                        <h5 class="text-size-inputs">Nombre</h5>
+                    </div>
+                    <div class="form-inputs">
+                        <input mdbInput type="text" class="form-control" required #firstName='ngModel' name='firstName'
+                            [(ngModel)]='subscribeData.firstName'>
+                    </div>
+    
+                    <div class="text-inputs">
+                        <h5 class="text-size-inputs">Correo</h5>
+                    </div>
+                    <div class="form-inputs">
+                        <input pattern="\S+@\S+\.\S+" mdbInput type="email" class="form-control" required
+                            #email='ngModel' name='userName' [(ngModel)]='subscribeData.email'>
+                    </div>
+    
+                    <div class="button">
+                        <button mdbBtn type='submit'>SUSCRIBIRSE</button>
+                    </div>
+    
+                </div>
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="container-footer" id="footerId">
+          <div class="socials">
+            <div id="social-test">
+              <ul class="social">
+                <li><a href="https://www.facebook.com/MachacaFestival/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="MachacaFestival" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/MachacaFestival/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <div id="mov"><br class="br-mov"></div>
+                <li><a href="https://www.tiktok.com/@machacafestival" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/user/MachacaFestTV" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                <li><a href="https://open.spotify.com/user/machaca2016?si=eceba6a5f58940e4" target="_blank" rel="noopener noreferrer"><i class="fa fa-spotify" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-img"><img src="../../../assets/images/pt-logo.webp" alt=""></div>
+          <div style="text-align: center; padding-bottom: 10px;">COPYRIGHT © 2022 MACHACA FEST. TODOS LOS DERECHOS RESERVADOS.</div>
+        </div>
+    
+    </div>
+
+</div>
+
+<div class="background-container">
+<div class="stars"></div>
+<div class="twinkling"></div>
+<!-- <div class="clouds"></div> -->
